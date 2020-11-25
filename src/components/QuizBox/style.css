@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 50%;
+    height: 650px;
+    margin: 40px auto;
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+
+.container .content {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #dddddd;
+}
+
+.container .content h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 220%;
+}
+
+.container .content div {
+    width: 160px;
+    height: 20px;
+    background: #808080;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.container .content p {
+    font-size: 120%;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.container .question {
+    background: #fafafa;
+    padding-top: 30px;
+    padding-bottom: 1px;
+    border-bottom: 2px solid #dddddd;
+}
+
+.container .question>p {
+    font-size: 180%;
+    text-align: center;
+    margin-bottom: 35px;
+    color: #1f1f1f;
+}
+
+.container .question div {
+    width: 90%;
+    line-height: 50px;
+    background: #ededed;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    margin: 15px auto;
+    padding-left: 25px;
+}
+
+.container .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 25px;
+}
+
+.container .footer button {
+    width: 80px;
+    height: 42px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #d7d7d7;
+    border-radius: 20px;
+    font-size: 18px;
+}
