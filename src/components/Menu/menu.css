@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #34485e;
+}
+
+a {
+    text-decoration: none;
+    color: #f5fafc;
+}
+
+.container {
+    width: 50%;
+    height: 60px;
+    margin: 50px auto;
+}
+
+.container ul li {
+    line-height: 60px;
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #3598db;
+    position: relative;
+    margin-left: 10px;
+    z-index: 0;
+}
+
+.container ul li:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.container ul li:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.container ul li:nth-child(2n) {
+    background: #2980b9;
+}
+
+.container ul li .triangle {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-left: 12px solid #3598db;
+    border-bottom: 30px solid transparent;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    right: -12px;
+}
+
+.container ul li:nth-child(2n) .triangle {
+    border-left: 12px solid #2980b9;
+}
+
+.container ul li .triangle-top {
+    width: 0;
+    height: 0;
+    border-right: 10px solid #3598db;
+    border-bottom: 30px solid transparent;
+    position: absolute;
+    left: -10px;
+}
+.container ul li:nth-child(2n) .triangle-top {
+    border-right: 10px solid #2980b9;
+}
+
+.container ul li .triangle-bottom {
+    width: 0;
+    height: 0;
+    border-right: 10px solid #3598db;
+    border-top: 30px solid transparent;
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+}
+.container ul li:nth-child(2n) .triangle-bottom {
+    border-right: 10px solid #2980b9;
+}
